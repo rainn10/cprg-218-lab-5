@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Griffy&family=Metal+Mania&display=swap');
+
+h1 {
+    font-family: "Bigelow Rules", sans-serif;
+    font-size: 3rem;
+    color: #FFBF1F;
+    margin: 0 0 15px 0;
+}
+h2 {
+    font-family: "Bigelow Rules", sans-serif;
+    font-size: 2.8rem;
+    color: #FFBF1F;
+    margin: 0 0 15px 0;
+}
+h4 {
+    font-family: "Griffy", sans-serif;
+    font-size: 2rem;
+    margin: 15px;
+}
+p {
+    font-family: "Metal Mania", sans-serif;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+body, html {
+    background-color: #253454;
+    height: 100%;
+    overflow-x: hidden;
+    margin: auto;
+}
+html{
+    font-size: 16px;
+}
+
+main {
+    margin: 0 10% 0 10%;
+}
+
+#intro, #spells, #characters, #books, #footer {
+    padding-top: 100px;
+}
+
+
+/* Header */
+#navbar {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    background: #192339;
+    align-items: center;
+    justify-content: left;
+    top: 0;
+    height: 60px;
+    padding: 5px;
+    z-index: 1000;
+    padding-left: 2rem;
+    padding-top: 1rem;
+
+}
+
+#navbar h1 a {
+    display: inline-block;
+
+    text-decoration: none;
+    color: #D29700;
+    font-size: 3rem;
+    font-family: 'Bigelow Rules', sans-serif; 
+} 
+
+nav {
+    display: inline-block;
+    margin-left: 20px; /* Adjust as needed */
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 30px;
+}
+
+nav ul li a {
+    font-family: "Metal Mania", sans-serif;
+    font-size: 1.5rem;
+    color: #FFCB47;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #671316;
+}
+
+
+/* Intro Section */
+#intro .mainintro {
+    margin: 25vh 0 15vh 0;
+    font-size: 9.5rem;
+    text-align: center; 
+}
+.info{
+    padding-left: 2rem;
+    margin-bottom: 20px;
+    color: #AAB9DA;
+    font-size: 1.5rem;
+    line-height: 35px;
+}
+
+
+/* Spells Section */
+.spells-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #8EA2CD;
+    border: 5px outset #D29700;
+    border-radius: 10px; 
+}
+
+#SpellButton {
+    background-color: #671316;
+    color: #D29700;
+    font-family: "Griffy",sans-serif;
+    margin-top: 20px; 
+    font-size: 1.25rem;
+    padding: 10px 20px;
+    border: 2.5px outset #D29700;
+    border-radius: 25px;
+}
+#SpellButton:hover {
+    border: 2.5px outset #3c372a;
+    background-color: #D29700;
+    color: #671316;
+}
+#SpellButton:active {
+    background-color: #637FBB;
+    color: #671316;
+}
+
+.spell-card {
+    width: 100%;
+    text-align: center; 
+}
+.spell-card p {
+    font-size: 2.5rem;
+    margin: 5px;
+    color: #651b1e;
+    border-radius: 0 0 10px 10px;
+    padding: 0px 10px 0px 10px;
+    height: auto;
+}
+
+
+/* Characters Section */
+.search-container {
+    display: flex;
+    justify-content: center;
+}
+#searchInput {
+    background-color: #8EA2CD;
+    border: 2.5px outset #D29700;
+    color: #671316;
+    font-size: 1rem;
+    width: 80%;
+    height: 1rem;
+    border-radius: 25px;
+    padding: 1rem;
+    width: 80%;
+}
+#searchInput::placeholder {
+    color: #671316;
+}
+
+.character-container {
+    grid-template-columns: repeat(3, 1fr);
+    list-style-type: none;
+    padding: 25px;
+    display: grid;
+    margin: 0;
+    grid-gap: 25px;
+  } 
+.character-card {
+    background-color: #D29700;
+    border-radius: 10px;
+    width: 100%;
+    color: #671316;
+    padding-bottom: 10px;
+}
+.character-card img {
+    width: 100%;
+}
+.character-card p {
+    margin: 5px;
+    color: #671316;
+    border-radius: 0 0 10px 10px;
+    padding: 0px 10px 0px 10px;
+    height: auto;
+}
+
+
+/* Books Section */
+.book-container {
+    grid-template-columns: repeat(2, 1fr);
+    list-style-type: none;
+    padding: 0 25px 25px 25px;
+    display: grid;
+    grid-gap: 25px;
+    margin-top: 0;
+} 
+.book-card {
+    background-color: #D29700;
+    border-radius: 10px;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.book-card img {
+    width: 100%;
+}
+.book-card h4 {
+    margin-bottom: 0;
+    color: #671316;
+}
+.book-card p {
+    margin: 5px;
+    color: #671316;
+    border-radius: 0 0 10px 10px;
+    padding: 0px 10px 0px 10px;
+    height: auto;
+    line-height: 30px;
+}
+
+/* Footer */
+footer {
+    background: #192339;
+    color: #132A49;
+    max-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 10% 30px 10%;
+    margin-top: 8%;
+}
+.footer-column {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex: 1;
+    text-align: left;
+    justify-content:center;
+} 
+.title {
+    font-family: "Bigelow Rules", sans-serif;
+    color: #D29700;
+    font-size: 2.3rem;
+    margin: 2% 0 2% 0;
+    text-align: left;
+}
+.footer-column p{
+    color: #FFCB47;
+    font-size: 1.3em;
+}
+.footer-column p:hover{
+    color: #671316;
+}
+.footer-column a {
+    text-decoration: none;
+}
+.navigation, .resources, .fun, .details {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cc {
+    font-family: "Work Sans", sans-serif;
+    background: #192339;
+    color: #D29700;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+    header {
+      height: 100%;
+    }
+    .main {
+      margin: auto;
+    }
+
+    .character-container, .book-container {
+      grid-template-columns: 1fr;
+      padding: 0;
+    }
+    .character-card, .book-card {
+      margin-bottom: 20px;
+    }
+
+    nav ul {
+        display: none;
+    }
+    #navbar {
+        justify-content: center;
+        height: auto;
+    }
+    #navbar h1 a{
+        width: 100%;
+        margin: 0;
+    }
+    nav ul {
+        margin-left: 0;
+        justify-content: center;
+    }
+    nav ul li {
+        margin-right: 15px;
+    }
+
+    #searchInput {
+        width: 100%;
+        margin: 0 10px
+        20px;
+    }
+
+    #SpellButton {
+        margin-top: 10px;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 20px 5%;
+        margin-top: 5%;
+    }
+    .footer-column {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .title{
+        text-align: center;
+    }
+}

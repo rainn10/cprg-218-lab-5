@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/lab_five.css">
+    <title>Lab 5: Use an API on a Web Page</title>
+</head>
+
+<body>
+    <script defer src="javascript/main.js"></script>
+    <header id="navbar">
+        <h1><a href="#intro">Harry Potter</a></h1>
+        <nav>
+            <ul>
+                <li><a href="#spells">Magic Spells</a></li>
+                <li><a href="#characters">Character</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#footer">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+
+    <main>
+        <section id="intro">
+            <h2 class="mainintro">Welcome to the Wizarding World</h2>
+            <p class="info">Welcome to our Harry Potter universe! Dive into the magical world created by J.K. Rowling, where spells, characters, and adventures await. Whether you're a long-time fan or new to the series, there's something here for everyone.</p>
+            <h2>About Harry Potter</h2>
+            <p class="info">Harry Potter is a globally beloved fantasy series written by British author J.K. Rowling. The series follows the life and adventures of a young wizard, Harry Potter, and his friends Hermione Granger and Ron Weasley, as they attend Hogwarts School of Witchcraft and Wizardry. Set in a magical world parallel to our own, the story explores themes of friendship, courage, and the eternal struggle between good and evil. Through its books, the series captivates readers with its richly imagined universe, memorable characters, and compelling narrative. With over 500 million copies sold worldwide, the Harry Potter series has become a cultural phenomenon, inspiring movies, merchandise, and a dedicated fan base known as 'Potterheads.'</p>
+        </section>
+        <section id="spells">
+            <h2>Harry Potter Spells</h2>
+            <p class="info">Experience the wonder of magic with a spell generator that reveals a random spell from the Harry Potter universe. Try it out and see what enchantment awaits!</p>
+            <div class="spells-container">
+                <div id="spellsSection"></div>
+                <button id="SpellButton">Generate Random Spell</button>
+            </div>
+        </section>        
+        <section id="characters">
+            <h2>Harry Potter Characters</h2>
+            <p class="info">Get to know the memorable characters from the Harry Potter series, from the heroic Harry Potter to the complex Severus Snape.</p>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search for specific characters...">
+            </div>            
+            <div id="charactersSection" class="character-container"></div>
+        </section>
+        <section id="books">
+            <h2>Harry Potter Books</h2>
+            <p class="info">Delve into the enchanting stories of the Harry Potter books, from the Philosopher's Stone to the Deathly Hallows, and everything in between.</p>
+            <div id="booksSection" class="book-container"></div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="footer-column">
+            <h1 class="title">Navigation</h1>
+            <ul class="navigation">
+              <li><a href="#intro"><p>Back to Top</p></a>
+              <li><a href="#spells"><p>Magic Spells</p></a></li>
+              <li><a href="#characters"><p>Characters</p></a></li>
+              <li><a href="#books"><p>Books</p></a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h1 class="title">Resources</h1>
+            <ul class="resources">
+              <li><a href="https://www.wizardingworld.com/register" target="_blank"><p>Potterheads</p></a></li>
+              <li><a href="https://www.wizardingworld.com/" target="_blank"><p>Wizarding World</p></a></li>
+              <li><a href="https://harrypottershop.co.uk/" target="_blank"><p>Merchandise</p></a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+          <h1 class="title">Fun Stuff</h1>
+          <ul class="fun">
+            <li><a href="https://www.wizardingworld.com/quiz" target="_blank"><p>Quizzes</p></a></li>
+            <li><a href="https://www.wizardingworld.com/collections/potter-puzzles" target="_blank"><p>Puzzles</p></a></li>
+            <li><a href="https://www.wizardingworld.com/sorting-hat" target="_blank"><p>Sorting Hat</p></a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+            <h1 class="title">Project Details</h1>
+            <ul class="details">
+              <li><a href="https://drive.google.com/file/d/1EjAR6wGQuEaQH9oEDAtcln77CsFIF9Jy/view?usp=sharing" target="_blank"><p>Overview</p></a></li>
+              <li><a href="https://github.com/fedeperin/potterapi" target="_blank"><p>Credits</p></a></li>
+              <li><a href="https://forms.gle/Lx3fYnM1b9uokEQZ9" target="_blank"><p>Feedback</p></a></li>
+            </ul>
+        </div>
+    </footer>
+
+        <div class="cc">
+            <small>Copyright &copy;<span id="footer-year"></span> Rain Aclao SAIT Student. All rights reserved.</small>
+        </div>
+
+    <script src="javascript/scripts.js"></script>
+</body>
+</html>
